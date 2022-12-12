@@ -31,10 +31,10 @@ minimum_payments = st.number_input('Minimum Payments:', min_value=0.0)
 full_payment = st.slider('Percent of Full Payment:', 0, 100, format='%f%%')
 tenure = st.number_input('Tenure:', min_value=0)
 
-if st.button('Predict'):
+if st.button('Cluster'):
   prediction = predict(balance, balance_frequency, purchases, one_off_purchases, installment_purchases, cash_advance, purchases_frequency, one_off_purchases_frequency, installment_purchases_frequency, cash_advance_frequency, cash_advance_trx, purchases_trx, credit_limit, payments, minimum_payments, full_payment, tenure)
   
   if prediction[0]:
-    st.warning('You belong to a group of credit card users with low purchases.')
+    st.warning('You belong to a cluster of credit card users with low purchases.')
   else:
-    st.success('You belong to a group of credit card users with high purchases.')
+    st.success('You belong to a cluster of credit card users with high purchases.')
