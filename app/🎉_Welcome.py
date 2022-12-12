@@ -15,7 +15,7 @@ This site features a collection of projects that have been completed as part of 
 
 The team consists of 3 members, all of whom contributed to the development of the projects on this site.
 
+- Agung Hot Iman (PYTN-KS08-008)
 - Alim Tegar Wicaksono (PYTN-KS08-020)
-- Jane Smith (PYTN-KS08-xxx)
-- Bob Johnson (PYTN-KS08-xxx)
+- Siti Anzila Nur (PYTN-KS08-022)
 ''')
