@@ -7,13 +7,13 @@ This site features a collection of projects that have been completed as part of 
 
 ## Overview of Projects
 
-- **Project 1:**
+- **Project 1: Predicting Lyft and Uber Price** - This project uses the Linear Regression algorithm to predict the prices for Lyft and Uber rides based on various factors. 
 
 - **Project 2:**
 
-- **Project 3: 💔 Predict the Heart Failure Risk** - This project uses the XGBoost algorithm to predict the risk of heart failure in individuals.
+- **Project 3: 💔 Predicting Heart Failure Risk** - This project uses the XGBoost algorithm to predict the risk of heart failure in individuals.
 
-- **Project 4: 💳 Predict the Cluster of a Credit Card User** - This project uses the K-means clustering algorithm to group credit card users into different clusters based on their spending habits and other relevant characteristics.
+- **Project 4: 💳 Clustering Credit Card User** - This project uses the K-means clustering algorithm to group credit card users into different clusters based on their spending habits and other relevant characteristics.
 
 ## About the Team
 
