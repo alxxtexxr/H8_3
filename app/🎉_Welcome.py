@@ -7,7 +7,7 @@ This site features a collection of projects that have been completed as part of 
 
 ## Overview of Projects
 
-- **Project 1: Predicting Lyft and Uber Price** - This project uses the Linear Regression algorithm to predict the prices for Lyft and Uber rides based on various factors. 
+- **Project 1: 🚕 Predicting Lyft and Uber Price** - This project uses the Linear Regression algorithm to predict the prices for Lyft and Uber rides based on various factors. 
 
 - **Project 2:**
 
