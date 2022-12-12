@@ -4,7 +4,7 @@ import pickle
 
 st.title('💔 Predicting Heart Failure Risk')
 
-with open('../exported-files/models/heart_failure_classifier.pkl', 'rb') as file:
+with open('../models/heart_failure_classifier.pkl', 'rb') as file:
   model = pickle.load(file)
     
 @st.cache

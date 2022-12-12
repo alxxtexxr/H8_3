@@ -4,7 +4,7 @@ import pickle
 
 st.title('💳 Clustering Credit Card Users')
 
-with open('../exported-files/models/cc_users_clusterer.pkl', 'rb') as file:
+with open('../models/cc_users_clusterer.pkl', 'rb') as file:
   model = pickle.load(file)
     
 @st.cache
