@@ -10,7 +10,8 @@ with open(str(Path(__file__).parents[1]) + '/models/heart_failure_classifier.pkl
     
 @st.cache
 def predict(age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium, sex, smoking, time):
-  return model.predict(pd.DataFrame([[age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium, sex, smoking, time]]))
+  return model.predict(pd.DataFrame([[age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium, sex, smoking, time]],
+                                    columns=('age', 'anaemia', 'creatinine_phosphokinase', 'diabetes', 'ejection_fraction', 'high_blood_pressure', 'platelets', 'serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time')))
 
 bool_options = {0: 'No', 1: 'Yes'}
 sex_options = {0: 'Male', 1: 'Female'}

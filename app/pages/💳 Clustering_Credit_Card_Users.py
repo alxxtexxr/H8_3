@@ -10,7 +10,8 @@ with open(str(Path(__file__).parents[1]) + '/models/cc_users_clusterer.pkl', 'rb
     
 @st.cache
 def predict(balance, balance_frequency, purchases, one_off_purchases, installment_purchases, cash_advance, purchases_frequency, one_off_purchases_frequency, installment_purchases_frequency, cash_advance_frequency, cash_advance_trx, purchases_trx, credit_limit, payments, minimum_payments, full_payment, tenure):
-  return model.predict(pd.DataFrame([[balance, balance_frequency/100, purchases, one_off_purchases, installment_purchases, cash_advance, purchases_frequency/100, one_off_purchases_frequency/100, installment_purchases_frequency/100, cash_advance_frequency/100, cash_advance_trx, purchases_trx, credit_limit, payments, minimum_payments, full_payment/100, tenure]]))
+  return model.predict(pd.DataFrame([[balance, balance_frequency/100, purchases, one_off_purchases, installment_purchases, cash_advance, purchases_frequency/100, one_off_purchases_frequency/100, installment_purchases_frequency/100, cash_advance_frequency/100, cash_advance_trx, purchases_trx, credit_limit, payments, minimum_payments, full_payment/100, tenure]],
+                                    columns=('BALANCE', 'BALANCE_FREQUENCY', 'PURCHASES', 'ONEOFF_PURCHASES', 'INSTALLMENTS_PURCHASES', 'CASH_ADVANCE', 'PURCHASES_FREQUENCY', 'ONEOFF_PURCHASES_FREQUENCY', 'PURCHASES_INSTALLMENTS_FREQUENCY', 'CASH_ADVANCE_FREQUENCY', 'CASH_ADVANCE_TRX', 'PURCHASES_TRX', 'CREDIT_LIMIT', 'PAYMENTS', 'MINIMUM_PAYMENTS', 'PRC_FULL_PAYMENT', 'TENURE')))
 
 balance = st.number_input('Balance:', min_value=0.0)
 balance_frequency = st.slider('Balance Frequncy:', 0, 100, format='%f%%')
