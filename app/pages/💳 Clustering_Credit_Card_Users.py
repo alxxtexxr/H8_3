@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.title('Clustering Credit Card Users')
+st.title('💳 Clustering Credit Card Users')
 
 with open('../exported-files/models/cc_users_clusterer.pkl', 'rb') as file:
   model = pickle.load(file)
@@ -33,6 +33,6 @@ if st.button('Predict'):
   prediction = predict(balance, balance_frequency, purchases, one_off_purchases, installment_purchases, cash_advance, purchases_frequency, one_off_purchases_frequency, installment_purchases_frequency, cash_advance_frequency, cash_advance_trx, purchases_trx, credit_limit, payments, minimum_payments, full_payment, tenure)
   
   if prediction[0]:
-    st.warning('You are belong to a group of credit card users with low purchases.')
+    st.warning('You belong to a group of credit card users with low purchases.')
   else:
-    st.success('You are belong to a group of credit card users with high purchases.')
+    st.success('You belong to a group of credit card users with high purchases.')

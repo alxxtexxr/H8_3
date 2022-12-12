@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.title('Predicting Heart Failure Risk')
+st.title('💔 Predicting Heart Failure Risk')
 
 with open('../exported-files/models/heart_failure_classifier.pkl', 'rb') as file:
   model = pickle.load(file)
