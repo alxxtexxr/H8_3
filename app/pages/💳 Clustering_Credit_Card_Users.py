@@ -1,10 +1,11 @@
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 import pickle
 
 st.title('💳 Clustering Credit Card Users')
 
-with open('../models/cc_users_clusterer.pkl', 'rb') as file:
+with open(str(Path(__file__).parents[1]) + '/models/cc_users_clusterer.pkl', 'rb') as file:
   model = pickle.load(file)
     
 @st.cache

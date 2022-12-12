@@ -1,10 +1,11 @@
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 import pickle
 
 st.title('💔 Predicting Heart Failure Risk')
 
-with open('../models/heart_failure_classifier.pkl', 'rb') as file:
+with open(str(Path(__file__).parents[1]) + '/models/heart_failure_classifier.pkl', 'rb') as file:
   model = pickle.load(file)
     
 @st.cache
