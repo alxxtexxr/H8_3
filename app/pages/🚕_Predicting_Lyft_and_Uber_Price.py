@@ -36,4 +36,4 @@ if st.button('Predict'):
   
   print(prediction)
   if prediction[0]:
-    st.success(f'Your estimated price for the ride is ${prediction[0]}')
+    st.success(f'Your estimated price for the ride is ${prediction[0]:.2f}.')

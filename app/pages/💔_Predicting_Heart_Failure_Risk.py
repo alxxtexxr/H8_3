@@ -17,16 +17,16 @@ bool_options = {0: 'No', 1: 'Yes'}
 sex_options = {0: 'Male', 1: 'Female'}
 
 age = st.number_input('Age:', min_value=1)
-anaemia = st.radio('Anaemia:', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
+anaemia = st.radio('Do You Have Anaemia?', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
 creatinine_phosphokinase = st.number_input('Creatinine Phosphokinase (mcg/L):', min_value=0)
-diabetes = st.radio('Diabetes:', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
+diabetes = st.radio('Do You Have Diabetes?', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
 ejection_fraction = st.slider('Ejection Fraction:', 0, 100, format='%f%%')
-high_blood_pressure = st.radio('High Blood Pressure:', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
+high_blood_pressure = st.radio('Do You Have High Blood Pressure?', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
 platelets = st.number_input('Platelets (kpl/mL):', min_value=0)
 serum_creatinine = st.number_input('Serum Creatinine (mg/dL):', min_value=0.0)
 serum_sodium = st.number_input('Serum Sodium (mEq/L):', min_value=0)
 sex = st.radio('Sex:', horizontal=True, options=list(sex_options.keys()), format_func=lambda x: sex_options[x])
-smoking = st.radio('Smoking:', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
+smoking = st.radio('Do You Smoking?', horizontal=True, options=list(bool_options.keys()), format_func=lambda x: bool_options[x])
 time = st.number_input('Follow-Up Period (Days):', min_value=1)
 
 if st.button('Predict'):
