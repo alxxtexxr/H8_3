@@ -2,3 +2,5 @@
 london_crime_by_lsoa.zip
 london_crime_by_lsoa.csv
 london_boroughs.json
+*.txt
+!requirements.txt
